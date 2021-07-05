@@ -9,6 +9,14 @@ logging:
   level:
       org.springframework.cloud.config: DEBUG
 
+keycloak:
+  realm: puff
+  auth-server-url: http://localhost:8180/auth
+  ssl-required: external
+  resource: config-server
+  principal-attribute: preferred_username
+  bearer-only: true
+
 ---
 spring:
   profiles: git
