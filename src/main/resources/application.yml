@@ -18,6 +18,6 @@ spring:
     config:
       server:
         git:
-          uri: D:\Projects\puffproject\cloud-configuration
+          uri: https://github.com/puffproject/cloud-configuration.git
           searchPaths: backend,backend/*
           cloneOnStart: true
