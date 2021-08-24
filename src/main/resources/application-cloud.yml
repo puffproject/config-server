@@ -1,0 +1,5 @@
+spring:
+  security:
+    user:
+      name: ${CONFIG_USER_NAME}
+      password: ${CONFIG_USER_PASSWORD}
