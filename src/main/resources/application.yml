@@ -1,19 +1,6 @@
-server:
-  port: 8888
-
 spring:
   application:
     name: config-server
-  profiles:
-    active: git
-
-logging:
-  level:
-      org.springframework.cloud.config: DEBUG
-
----
-spring:
-  profiles: git
   cloud:
     config:
       server:
@@ -21,3 +8,7 @@ spring:
           uri: https://github.com/puffproject/cloud-configuration.git
           searchPaths: backend,backend/*
           cloneOnStart: true
+
+logging:
+  level:
+      org.springframework.cloud.config: DEBUG
